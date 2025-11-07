@@ -8,7 +8,7 @@ abstract class BankAccount {
   BankAccount({
     required String accountNumber,
     required String accountHolderName,
-    required double balance,
+    required double balance, required String holderName,
   })  : _accountnumber = accountNumber,
         _accountholdername = accountHolderName,
         _balance = balance;
