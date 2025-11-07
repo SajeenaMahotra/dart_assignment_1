@@ -5,14 +5,8 @@ abstract class BankAccount {
   String _accountholdername;
   double _balance;
 
-  BankAccount({
-    required String accountNumber,
-    required String accountHolderName,
-    required double balance, required String holderName,
-  })  : _accountnumber = accountNumber,
-        _accountholdername = accountHolderName,
-        _balance = balance;
-
+   BankAccount(this._accountnumber, this._accountholdername, this._balance);
+    
   String get accountNumber => _accountnumber;
   String get accountHolderName => _accountholdername;
   double get balance => _balance;
